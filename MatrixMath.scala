@@ -1,3 +1,5 @@
+val sqlContext = spark.sqlContext
+
 // Databricks notebook source
 import org.apache.spark.sql.functions._
 import org.apache.spark.mllib.linalg.distributed.{CoordinateMatrix, MatrixEntry}
