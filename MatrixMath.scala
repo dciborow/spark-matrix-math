@@ -1,3 +1,4 @@
+spark.sparkContext.setLogLevel("WARN")
 val sqlContext = spark.sqlContext
 
 // Databricks notebook source
