@@ -33,7 +33,6 @@ def time[R](block: => R): R = {
     result
 }
 
-
 // COMMAND ----------
 
 val userList = List(100,1000,10000,100000,1000000)
@@ -48,7 +47,3 @@ for(item <- itemList){
     time { multiply(user, item) }
   }
 }
-
-// COMMAND ----------
-
-
