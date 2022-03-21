@@ -18,7 +18,7 @@ def run_one(user_dim, item_dim, num_trials=100, device='/gpu'):
             sess.run(tf.global_variables_initializer())
             t1 = time.time()
 
-            for t in range(num_trials):
+            for _ in range(num_trials):
                 sess.run(op)
             t2 = time.time()
     return float(t2 - t1) / num_trials
